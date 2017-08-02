@@ -6,8 +6,8 @@ function findLongestWord(str) {
     var c = arr1[a].length;
     arr2.push(c);
   }
-  
-  var arr3 = arr2.sort().reverse();
+  var arr3 = arr2.sort(function(a, b){return b-a});
+  console.log(arr3);
   return arr3[0];
 }
 
