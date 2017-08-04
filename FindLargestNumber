@@ -1,0 +1,12 @@
+
+function largestOfFour(arr) {
+  var arr1 = [];
+  for (var d = 0; d < arr.length; d++) {
+    var ord = arr[d].sort(function(a, b){return b-a});
+    arr1.push(ord[0]);
+  }
+    
+  return arr1;
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
